@@ -1,10 +1,10 @@
-# 🚀 TP6 — Infrastructure as Code avec Terraform
+#  TP6 — Infrastructure as Code avec Terraform
 
 **Étudiante :** Narjess Dabbech — Master DevOps & Cloud (M2) — 2026
 
 ---
 
-## 📑 Sommaire
+##  Sommaire
 1. [Objectifs](#1--objectifs)
 2. [Installation de Terraform](#2--installation-de-terraform)
 3. [Docker local](#3--docker-local)
@@ -14,12 +14,12 @@
 
 ---
 
-## 1. 🎯 Objectifs
+## 1.  Objectifs
 - Installer Terraform et utiliser son cycle `init → plan → apply → destroy`.
 - Piloter Docker (local puis distant via SSH) avec le provider `kreuzwerker/docker`.
 - Déployer un conteneur CV One Page avec Terraform sur deux machines.
 
-## 2. 💻 Installation de Terraform
+## 2.  Installation de Terraform
 
 ```bash
 sudo apt update
@@ -31,7 +31,7 @@ sudo apt install -y terraform
 terraform version
 ```
 
-## 3. 🌐 Docker local
+## 3.  Docker local
 
 Le fichier `docker-nginx/main.tf` déploie un conteneur Nginx sur le port **8001** de `devsecops-vm`.
 
@@ -65,7 +65,7 @@ La connexion repose sur l'authentification par clé SSH mise en place au TP4.
 ### Terraform sur l'hôte distant
 ![Terraform remote](captures/terraform-remote.png)
 
-## 5. 🌐 Intégration CV One Page
+## 5.  Intégration CV One Page
 
 Le CV est déployé sur deux machines :
 
@@ -86,7 +86,7 @@ COPY index.html /usr/share/nginx/html/index.html
 ### CV sur master-2
 ![CV sur master-2](captures/integration2-cv.png)
 
-## 6. 📁 Structure du dépôt
+## 6.  Structure du dépôt
 
 ```text
 terraform/
